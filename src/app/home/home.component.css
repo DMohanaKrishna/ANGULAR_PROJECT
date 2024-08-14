@@ -1,0 +1,118 @@
+/* General Styles */
+body, html {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f7f8fc; /* Light background color */
+  color: #333; /* Darker text color for contrast */
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff; /* White background for a clean look */
+  padding: 15px 30px; /* Increased padding for a more substantial feel */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-bottom: 2px solid #e0e0e0; /* Light grey border at the bottom */
+}
+
+.navbar-nav .nav-link {
+  color: #007bff !important; /* Blue text for links */
+  padding: 10px 15px; /* Uniform padding */
+  margin: 0 15px; /* Space between links */
+  font-weight: 600; /* Semi-bold for better visibility */
+  border-radius: 30px; /* Rounded links for a button-like appearance */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #007bff; /* Blue background on hover */
+  color: #ffffff !important; /* White text on hover */
+}
+
+.navbar-toggler {
+  border-color: #007bff; /* Blue border for toggler */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,123,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background: url('https://images.unsplash.com/photo-1542281286-9e0a16bb7366') no-repeat center center;
+  background-size: cover;
+  filter: brightness(85%); /* Slightly dimmed for better text visibility */
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Added text shadow for readability */
+}
+
+.banner-text h1 {
+  font-size: 3em; /* Slightly smaller font for the title */
+  margin-bottom: 15px;
+}
+
+.banner-text p {
+  font-size: 1.5em;
+}
+
+/* Content Section */
+.content-section {
+  padding: 50px 20px; /* Added more padding */
+  background-color: #ffffff; /* White background for content area */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slight shadow for elevation */
+  margin: 30px;
+}
+
+.upload-section h2 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  color: #007bff; /* Blue color for headings */
+}
+
+.upload-section input[type="file"] {
+  display: block;
+  margin: 25px auto;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.image-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.uploaded-image {
+  max-width: 80%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+}
+
+.effects-buttons button {
+  margin: 0 15px;
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1.1em;
+}
+
+.effects-buttons button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
